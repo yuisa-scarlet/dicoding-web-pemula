@@ -134,4 +134,22 @@ document.addEventListener("DOMContentLoaded", () => {
       renderQuestions();
     });
   });
+  const btnResponsive = document.querySelector(".btn-responsive");
+  const navContainer = document.querySelector(".nav-container");
+
+  if (btnResponsive) {
+    btnResponsive.addEventListener("click", () => {
+      navContainer.classList.toggle("active");
+
+      btnResponsive.classList.toggle("active");
+    });
+  }
+
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navContainer.classList.remove("active");
+      btnResponsive.classList.remove("active");
+    });
+  });
 });
