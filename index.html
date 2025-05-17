@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forum</title>
+
+    <link rel="stylesheet" href="styles/global.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <div class="header-wrapper">
+        <div class="logo">
+          <img src="assets/logoipsum.svg" alt="Logoipsum" />
+        </div>
+        <nav class="nav-container">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Beranda</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Forum</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Tentang</a></li>
+          </ul>
+        </nav>
+        <div class="btn-group">
+          <button class="btn-login">Masuk</button>
+          <button class="btn-register">Daftar</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="main-wrapper">
+        <aside class="sidebar-left">
+          <section class="profile">
+            <div class="profile-header">
+              <img
+                src="/assets/profile.png"
+                alt="Profile Picture"
+                class="profile-picture"
+              />
+              <h2 class="profile-name">Ervalsa Dwi Nanda</h2>
+              <p class="profile-bio">
+                Manusia biasa makan nasi, tapi beda lauk.
+              </p>
+              <p>Tarakan, 3 Desember 2002</p>
+            </div>
+          </section>
+
+          <h3>Publik</h3>
+          <ul>
+            <li>Semua Pertanyaan <span class="count">6,234</span></li>
+            <li>Cari</li>
+            <li>Tags</li>
+            <li>Tanyakan</li>
+          </ul>
+
+          <h3>Aktivitas Saya</h3>
+          <ul>
+            <li>Pertanyaan Saya <span class="count">24</span></li>
+            <li>Terselesaikan <span class="count">120</span></li>
+            <li>Nimbrung <span class="count">10</span></li>
+            <li>Disimpan <span class="count">6</span></li>
+          </ul>
+        </aside>
+        <section class="content">
+          <!-- Filter options -->
+          <div class="filter-options">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Cari pertanyaan..."
+              class="search-input"
+            />
+            <div class="tag-filters">
+              <button class="tag-filter active" data-tag="all">Semua</button>
+              <button class="tag-filter" data-tag="React">React</button>
+              <button class="tag-filter" data-tag="Fullstack">Fullstack</button>
+              <button class="tag-filter" data-tag="TypeScript">
+                TypeScript
+              </button>
+            </div>
+          </div>
+
+          <div id="loading" class="loading">
+            <p>Memuat pertanyaan...</p>
+          </div>
+          <div id="questions-container"></div>
+        </section>
+
+        <aside class="sidebar-right">
+          <div class="box">
+            <h4>Pertanyaan Populer</h4>
+            <ul>
+              <li>Bagaimana cara menggunakan React dengan Django?</li>
+              <li>Kapan versi terbaru React Laravel dirilis?</li>
+              <li>Tidak bisa menjalankan Demo 7 React</li>
+              <li>Saya ingin meminta refund</li>
+              <li>Bagaimana cara menggunakan React dengan Rails?</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h4>Tutorial Terbaru</h4>
+            <ul>
+              <li>Cara menyesuaikan SASS di React</li>
+              <li>Cara mengubah font web secara global</li>
+              <li>Cara mengatur mode gelap (dark mode)</li>
+              <li>Struktur folder dan build tools di React</li>
+              <li>Integrasi React dengan Blazor Server Side</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>2025 © Ervalsa Dwi Nanda</p>
+      <ul>
+        <li><a href="#">Kebijakan Privasi</a></li>
+        <li><a href="#">Syarat dan Ketentuan</a></li>
+        <li><a href="#">Kontak</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+      </ul>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
